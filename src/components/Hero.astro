@@ -39,7 +39,6 @@
   renderer.setSize(innerWidth, innerHeight);
   const amCanvas = document.getElementById('canvas') as HTMLCanvasElement;
   amCanvas.appendChild(renderer.domElement);
-
   const geo = new BufferGeometry();
   const pos = new Float32Array(N * 3);
   const tgt = new Float32Array(N * 3);
@@ -72,7 +71,6 @@
   });
   const mesh = new Points(geo, mat);
   scene.add(mesh);
-
   let rx = 0,
     ry = 0,
     tx = 0,
